@@ -13,3 +13,22 @@ body {
         background-color: green;
     }
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 95%;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+.grid p {
+    text-align: center;
+    font-size: clamp(1.5rem, 15vw, 80rem);
+    color: white;
+}
+
+@media screen and (min-width: 700px) {
+    .grid p {
+        font-size: clamp(1.5rem, 5vw, 4rem);
+    }
+}
